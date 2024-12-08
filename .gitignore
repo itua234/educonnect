@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+.env.secret
+/firebase-adminSDK.json
+/chairs.js
+/role.js
+/dummy.js
+/share.js
+/route-table.log
+/queue.js
