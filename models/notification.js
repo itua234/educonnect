@@ -16,7 +16,9 @@ module.exports = (sequelize, DataTypes, Sequelize) => {
             }
         },
         read_at: {type: DataTypes.DATE, allowNull: true}
-    })
+    },{
+        tableName: 'notifications',
+    });
     Notification.addScope('read', {
         where: {
             read_at: {

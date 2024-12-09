@@ -61,6 +61,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         email_verified_at: {type: DataTypes.DATE, allowNull: true}
     },{
+        tableName: 'users',
         hooks: {
             beforeCreate: async (user) => {
                 if(user.password){
